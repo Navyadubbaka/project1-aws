@@ -103,7 +103,6 @@ Block Public Access settings
 Disabled:
 •	Block public bucket policies
 •	Block public access through ACLs
- 
 ________________________________________
  VALIDATION & TESTING
 Website tested using:
