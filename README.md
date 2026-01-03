@@ -1,8 +1,8 @@
 # project1-aws
 Built a static website hosting project using AWS S3. I created a dedicated IAM user with limited S3 permissions and configured AWS CLI for secure access. Using CLI commands, I created the bucket, uploaded website files, and applied a bucket policy to allow public read-only access. Finally, I enabled static website hosting and validated the endpoint
 
-Project: AWS S3 Static Website Hosting with Secure IAM Access
- IAM USER CREATION 
+**Project: AWS S3 Static Website Hosting with Secure IAM Access**
+**IAM USER CREATION **
 Why this step?
 •	AWS root user should never be used for daily operations
 •	Best practice is least-privilege IAM user
@@ -16,7 +16,7 @@ Access keys
 •	Generated Access Key ID and Secret Access Key
 •	Used them for AWS CLI authentication
 ________________________________________
- AWS CLI INSTALLATION & CONFIGURATION
+** AWS CLI INSTALLATION & CONFIGURATION**
 Why AWS CLI?
 •	Enables programmatic access
 •	Core DevOps skill
@@ -39,7 +39,7 @@ This confirms:
 •	CLI is correctly authenticated
  
 ________________________________________
- S3 BUCKET CREATION 
+** S3 BUCKET CREATION **
 Why S3?
 •	Serverless
 •	Highly available
@@ -53,7 +53,7 @@ Bucket naming rules followed
 •	No spaces
  
 ________________________________________
-WEBSITE FILE UPLOAD USING AWS CLI
+**WEBSITE FILE UPLOAD USING AWS CLI**
 Local folder structure
 project/
 ├── index.html
@@ -67,7 +67,7 @@ Why sync?
 •	Efficient uploads
 •	Industry best practice
 ________________________________________
-STATIC WEBSITE HOSTING CONFIGURATION
+**STATIC WEBSITE HOSTING CONFIGURATION**
 Why?
 •	Enables browser access
 •	Converts S3 bucket into a web endpoint
@@ -78,7 +78,7 @@ Index document: index.html
 Generated endpoint:
 http://project-statichosting.s3-website.ap-south-1.amazonaws.com
 ________________________________________
-PUBLIC ACCESS CONTROL (CRITICAL SECURITY STEP)
+**PUBLIC ACCESS CONTROL (CRITICAL SECURITY STEP)**
 Why needed?
 •	S3 buckets are private by default
 •	Website won’t load without public read permission
@@ -104,7 +104,7 @@ Disabled:
 •	Block public bucket policies
 •	Block public access through ACLs
 ________________________________________
- VALIDATION & TESTING
+** VALIDATION & TESTING**
 Website tested using:
 S3 Website Endpoint
 http://project-statichosting.s3-website.ap-south-2.amazonaws.com/
